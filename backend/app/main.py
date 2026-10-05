@@ -8,7 +8,10 @@ app = FastAPI(title="Pranjal Portfolio API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://pranjal-portfoli.netlify.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
