@@ -7,7 +7,7 @@ import {
   ExternalLink, Moon, Sun, CheckCircle2
 } from "lucide-react";
 
-const API = "http://127.0.0.1:8000/api";
+const API = "https://pranjal-portfolio-hvjp.onrender.com/api";
 
 async function api(path, options = {}) {
   const response = await fetch(`${API}${path}`, {
